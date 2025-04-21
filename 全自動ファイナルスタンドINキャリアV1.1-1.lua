@@ -254,7 +254,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChil
 	print("Teleport To Game")
 	else
 	wait(5)
-	local player = game.Players.hinoaoki
+	local player = game.Players.LocalPlayer
 	local backpack = player
 	if #backpack:GetChildren() == 5 then
 print("全自動ファイナルスタンドINキャリアV1.1-1.lua is running")
