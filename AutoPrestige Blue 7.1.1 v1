@@ -1,0 +1,238 @@
+print("AutoPrestige Blue 7.1.1 is running")
+while wait(10) do
+
+local perks = {
+    "ReducedDamage", "ArmourRegen", "KillHealth", "ReducedAltDamage", "EscapeDeath", "Undying", "CriticalWeaken",
+    "HealthRegen", "Health", "Lifesteal", "StunRetaliation", "TimeStop", "Dodge", "LockingPerk", "Armour",
+    "ArmourImmune", "DeathImmune", "Pacifist", "WeightResistance", "FrostRetaliate", "CriticalHeal", "KillMaxHealth",
+    "DoTHeal", "HeatNova", "EquipmentArmour", "ArmourToHealth", "Overheal", "HealingPower", "BorrowedTime",
+    "BarricadeResistance", "KillResistance", "DeflectChance", "Thorns", "KillCCImmune", "Lifeline", "StarterArmour", "LaserRepair"
+}
+
+local prestigePerkFunction = game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("PrestigePerk")
+
+for _, perk in ipairs(perks) do
+    prestigePerkFunction:InvokeServer(perk)
+end
+
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "EquipmentDuration"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = "EquipmentDuration"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = "EquipmentDuration"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "EquipmentAmount"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "EquipmentAmount"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "EquipmentAmount"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "EquipmentKillRefill"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "EquipmentKillRefill"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+local args = {
+    [1] = "EquipmentKillRefill"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "LuckyCharm"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+local args = {
+    [1] = "LuckyCharm"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "LuckyCharm"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "ExplosionRadius"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "ExplosionRadius"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+local args = {
+    [1] = "ExplosionRadius"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "ClusterChance"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "ClusterChance"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+local args = {
+    [1] = "ClusterChance"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local args = {
+    [1] = "EquipmentAttackSpeed"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+local args = {
+    [1] = "EquipmentAttackSpeed"
+}
+
+
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = "EquipmentAttackSpeed"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("LevelPerk"):InvokeServer(unpack(args))
+
+
+
+print("Checked Pre for auto + Auto Unlock Perk")
+end
