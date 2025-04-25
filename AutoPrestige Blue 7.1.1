@@ -1,0 +1,13 @@
+local perks = {
+    "ReducedDamage", "ArmourRegen", "KillHealth", "ReducedAltDamage", "EscapeDeath", "Undying", "CriticalWeaken",
+    "HealthRegen", "Health", "Lifesteal", "StunRetaliation", "TimeStop", "Dodge", "LockingPerk", "Armour",
+    "ArmourImmune", "DeathImmune", "Pacifist", "WeightResistance", "FrostRetaliate", "CriticalHeal", "KillMaxHealth",
+    "DoTHeal", "HeatNova", "EquipmentArmour", "ArmourToHealth", "Overheal", "HealingPower", "BorrowedTime",
+    "BarricadeResistance", "KillResistance", "DeflectChance", "Thorns", "KillCCImmune", "Lifeline", "StarterArmour", "LaserRepair"
+}
+
+local prestigePerkFunction = game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("PrestigePerk")
+
+for _, perk in ipairs(perks) do
+    prestigePerkFunction:InvokeServer(perk)
+end
