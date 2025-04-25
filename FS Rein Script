@@ -1,0 +1,116 @@
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local hwidPaste = loadstring(game:HttpGet("https://pastebin.com/raw/nxzxu2zV"))()
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+
+for i, v in pairs(hwidPaste) do
+ if v == hwid then
+print("Whitelist yade :)")
+task.spawn(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/AntiAfk.lua'),true))()
+end)
+task.spawn(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/AutoPrestige%20Red%207.1.1%20v1'),true))()
+end)
+task.spawn(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/%E3%82%8C%E3%81%84%E3%82%93%E5%B0%82%E7%94%A8%E5%85%A8%E8%87%AA%E5%8B%95%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%E3%83%91%E3%83%BC%E3%82%AF%E8%A3%85%E5%82%99-3.lua'),true))()
+end)
+task.spawn(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%A2%E3%83%B3%E3%83%81.lua'),true))()
+end)
+task.spawn(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/%E3%82%AD%E3%83%A3%E3%83%A9%E3%83%AA%E3%82%BB%E8%A3%9C%E6%AD%A3%E3%83%AB%E3%83%BC%E3%83%97.lua'),true))()
+end)
+task.spawn(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hinoaki2sabu/FS/refs/heads/main/%E5%85%A8%E8%87%AA%E5%8B%95%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89IN%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2V1.1-1.lua'),true))()
+end)
+else
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+
+local Player = game.Players
+local LocalPlayer = Player.LocalPlayer
+local userid = LocalPlayer.UserId
+local username = LocalPlayer.Name
+local MarketplaceService = game:GetService("MarketplaceService")
+local placeId = game.PlaceId
+local localplrURL = "https://www.roblox.com/users/" .. userid
+local gameURL = "https://www.roblox.com/games/" .. placeId
+local playerCount = Player:GetPlayers()
+
+-- // actual code and what not
+function SendMessage(url, message) -- // Send Message Function
+    local http = game:GetService("HttpService")
+    local headers = {
+        ["Content-Type"] = "application/json"
+    }
+    local data = {
+        ["content"] = message
+    }
+    local body = http:JSONEncode(data)
+    local response = request({
+        Url = url,
+        Method = "POST",
+        Headers = headers,
+        Body = body
+    })
+    print("Sent Message")
+end
+function SendMessageEMBED(url, embed) -- // Send Embeded Message Function
+    local http = game:GetService("HttpService")
+    local headers = {
+        ["Content-Type"] = "application/json"
+    }
+    local data = {
+        ["embeds"] = {
+            {
+                ["title"] = embed.title,
+                ["description"] = embed.description,
+                ["color"] = embed.color,
+                ["fields"] = embed.fields,
+                ["footer"] = {
+                    ["text"] = embed.footer.text
+                }
+            }
+        }
+    }
+    local body = http:JSONEncode(data)
+    local response = request({
+        Url = url,
+        Method = "POST",
+        Headers = headers,
+        Body = body
+    })
+  print("Sent Embed")
+end
+
+
+-- // Examples 
+
+local url = "https://discord.com/api/webhooks/1363835529904263258/8YdNOM4WbVT8tzE5Vz5aQ3gHlX49iwoxOSKpZYIVPw7-HBGx82twD307fpA0WTPcdvlz" -- // WebHook Here
+SendMessage(url)
+
+
+
+
+local currentTime = os.time()
+local embed = {
+    ["title"] = "FS whitelist notification",
+    ["color"] = 1752220,
+    ["fields"] = {
+        {
+            ["name"] = "hwid",
+            ["value"] = hwid
+        },
+    },
+    ["footer"] = {
+        ["text"] = "executeした人: " .. game.Players.LocalPlayer.Name
+    }
+}
+SendMessageEMBED(url, embed)
+
+player:Kick("SSJS: 不正の検出")
+end
+end
+
+
