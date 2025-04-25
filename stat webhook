@@ -59,7 +59,6 @@ end
 
 SendMessage(url)
 
-
 print("全自動ファイナルスタンドパーク装備-1.lua is running")
 AutoEquipFarmPerks()
 wait(15)
