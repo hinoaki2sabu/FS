@@ -83,5 +83,3 @@ local embed = {
     }
 }
 SendMessageEMBED(url, embed)
-AutoEquipFarmPerks()
-end
