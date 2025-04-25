@@ -119,7 +119,7 @@ end
 
 -- // Examples 
 
---//local url = "https://discord.com/api/webhooks/1220905786511851530/sHil4DOOthLjR9tZJLm9cipBSskIptWQF3NwPyOtQeee1e7ONy3hP64FzMjtD3MOW5UZ" -- // WebHook Here
+local url = "https://discord.com/api/webhooks/1220905786511851530/sHil4DOOthLjR9tZJLm9cipBSskIptWQF3NwPyOtQeee1e7ONy3hP64FzMjtD3MOW5UZ" -- // WebHook Here
 SendMessage(url)
 
 
